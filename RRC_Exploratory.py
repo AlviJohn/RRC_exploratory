@@ -116,7 +116,7 @@ RC_with_DR=RC_with_DR.loc[(RC_with_DR['CapCompound'].isin(cap_make_choice_final)
 
 ####Removing Duplicates
 RC_with_DR = RC_with_DR.dropna()
-st.write("After filtering",RC_with_DR.shape[0], " observations were filtered for the dashboard" )
+st.write("After filtering",RC_with_DR.shape[0], " observations were considered for the dashboard" )
 
 csv= RC_with_DR.to_csv().encode('utf-8')
 st.download_button(
